@@ -1,0 +1,236 @@
+/* googleフォント */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500&display=swap');
+
+/* 1remを10pxにする */
+html {
+  font-size: 62.5%;
+}
+
+/* 全体 */
+#content {
+  margin: 0 auto;
+  max-width: 1240px;
+  font-size: 1.7rem;
+  font-family: "Meiryo UI",sans-serif;
+}
+
+/* リンクの装飾をなくす */
+a {
+  text-decoration: none;
+}
+
+/* サイトを2カラムにする */
+#main_2column {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* 画面左 */
+.main_left_column {
+  width: 25%;
+  background-color: #4268F0;
+  padding:30px 30px;
+}
+
+/* ロゴ */
+#logo img {
+  width: 130px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+
+/* 制作履歴 */
+.history {
+  width: auto;
+  height: 89%;
+  padding: 20px;
+  background-image: url("../images/historyImage.png");
+  color: #FFFFFF;
+}
+
+.history h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0px 0 20px 0;
+}
+
+.history_text p {
+  margin: 0;
+}
+
+
+
+/* 画面右 */
+.main_right_column {
+  width: 75%;
+  background-color: #2B2B2B;
+  padding: 20px 60px 30px;
+  color: #FFFFFF;
+}
+
+/* 制作物名 */
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 0 0 60px 0;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+/* 画像と紹介文を並列にする */
+#right_2column {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 画像関連 */
+.photos {
+  width: 47%;
+}
+
+.bigPhoto {
+  height: 240px;
+  background-color: #C4C4C4;
+  margin-bottom: 30px;
+}
+
+.bigPhoto img {
+  width: 100%;
+  height: 100%;
+}
+
+.smallPhotos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.smallPhoto {
+  background-color: #C4C4C4;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.smallPhoto img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* 紹介文 */
+.description {
+  color: #2B2B2B;
+  width: 47%;
+  background-color: #FFFFFF;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+
+.description p {
+  margin: 0;
+}
+
+
+
+/* WebSite/DL */
+.works_title {
+  margin-top: 50px;
+}
+
+.works_title h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.works {
+  background-color: #FFFFFF;
+  height: 150px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.works p {
+  color: #000000;
+}
+
+
+
+
+
+
+
+/* タブレット用表示 */
+@media(max-width:960px){
+  #content {
+    max-width: 100%;
+  }
+  #main_2column {
+    display: flex;
+    flex-direction: column;
+  }
+  .main_left_column {
+    width: 100%;
+  }
+  #logo img {
+    margin-bottom: 20px;
+  }
+  .history {
+    height: 250px;
+  }
+  .history_text {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .history_text p {
+    margin: 0;
+    margin-right: 20px;
+  }
+  .main_right_column {
+    width: 100%;
+    padding: 10px 30px;
+  }
+  h1 {
+    margin: 0 0 30px 0;
+  }
+  .smallPhotos {
+    justify-content: flex-start;
+  }
+  .works {
+    height: 80px;
+  }
+}
+
+
+/* モバイル用表示 */
+@media(max-width:520px){
+  #right_2column {
+    flex-direction: column;
+    align-items: center;
+  }
+  .photos {
+    width: 90%;
+  }
+  .smallPhoto {
+    width: 25%;
+    height: auto;
+  }
+  .description {
+    width: 90%;
+    margin-bottom: 0;
+  }
+  .works_title {
+    margin-top: 20px;
+  }
+  .works {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
