@@ -1,0 +1,52 @@
+/* グーグルフォント */
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap');
+
+body{
+  text-align: center;
+  background-color: #eeeeee;
+  color: #00000094;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  margin: 0 20px;
+}
+
+h1{
+  font-size: 150%;
+  font-family: 'Kaisei HarunoUmi', serif;
+}
+
+hr{
+  border: 5px solid #cac1c1;
+  margin: 50px 0;
+}
+
+#timer{
+  color: white;
+  width: 100px;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.test{
+  height: 30px;
+}
+
+input{
+  font-size: 20px;
+  border: 3px solid blue;
+}
+
+button{
+  font-size: 90%;
+  width: 150px;
+  font-weight: bold;
+  background-color: blue; 
+  color: white;
+}
+
+footer{
+  font-size: 50%;
+  text-align: right;
+}
+
+

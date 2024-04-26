@@ -1,0 +1,84 @@
+body{
+  background-color: hsl(215, 100%, 90%);
+  font-size: 20px;
+  margin: 20px 20px;
+  padding: 0;
+  height: 100%;
+}
+
+
+h1{
+  color: blue;
+  margin-bottom: 80px;
+}
+
+#back_link{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+#attention{
+  font-size: 0.8rem;
+  margin-bottom: 50px;
+}
+
+input{
+  border:solid blue 4px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button{
+  margin-top: 10px;
+  margin-left: 200px;
+}
+
+#button{
+  text-align: right;
+}
+
+.seach{
+  width: 65%;
+  margin-left: 5%;
+}
+
+#credit img{
+  width: 221px;
+}
+
+.photo{
+  padding-top: 10px;
+  top: 30px;
+  display: flex;
+}
+
+.itemIMG{
+  width: 30%;
+  position: relative;
+}
+
+img{
+  width: 90%;
+  height: 90%;
+} 
+
+/* ISBN */
+.innerText0{
+  position: absolute;
+  font-size: 1.5vw;
+  color: rgb(230, 221, 221);
+  background-color: black;
+}
+
+/* 順位 */
+.innerText1{
+  position: absolute; 
+  top: 0;
+  font-size: 1.5vw;
+  font-weight: bold;
+  height: 2vw;
+  background-color: rgb(0, 0, 0, 0.5);
+  color: white;
+  margin: 0 auto;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="MPWSの制作物紹介">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="favicon.ico" href="https://mpws.under.jp/images/favicon.ico">
+  <title>MPWS　VBA</title>
+
+  <!-- リセットCSS -->
+  <link rel="stylesheet" href="../../../css/sanitize.css">
+  <!-- スタイルCSS -->
+  <link rel="stylesheet" href="../../../css/style_main.css">
+</head>
+
+<body>
+  <div id="content">
+    <div id="main_2column">
+      <!-- 画面左 -->
+      <div class="main_left_column">
+
+        <!-- ロゴ -->
+        <div id="logo">
+          <a href="../../../index.html" alt="トップページに戻る">
+            <img src="../../../images/logo.png" alt="ロゴ">
+          </a>
+        </div>
+
+        <!-- 制作履歴 -->
+        <section class="history">
+          <h2>制作履歴</h2>
+          <div class="history_text">
+            <P><time>2022/03/23</time></P>
+            <p>サイトに公開</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- 画面右 main -->
+      <div class="main_right_column">
+        <main>
+          <!-- 制作物名 -->
+          <h1>PW作成マクロ</h1>
+          <div id="right_2column">
+
+            <!-- 紹介画像 -->
+            <div class="photos">
+
+              <!-- 大きい画像 -->
+              <div class="bigPhoto">
+                <img src="images_vba1/vba1_image1.png" alt="紹介画像（大）" name="bigPhotoShow">
+              </div>
+
+              <!-- 小さい画像 -->
+              <div class="smallPhotos">
+                <div class="smallPhoto">
+                  <img src="images_vba1/vba1_image1.png" alt="紹介画像（小）" onmouseover="document.bigPhotoShow.src='images_vba1/vba1_image1.png'">
+                </div>
+                <div class="smallPhoto">
+                  <img src="images_vba1/vba1_image2.png" alt="紹介画像（小）" onmouseover="document.bigPhotoShow.src='images_vba1/vba1_image2.png'">
+                </div>
+                <div class="smallPhoto">
+                  <img src="images_vba1/vba1_image3.png" alt="紹介画像（小）" onmouseover="document.bigPhotoShow.src='images_vba1/vba1_image3.png'">
+                </div>
+                <div class="smallPhoto">
+                  <img src="images_vba1/vba1_image4.png" alt="紹介画像（小）" onmouseover="document.bigPhotoShow.src='images_vba1/vba1_image4.png'">
+                </div>
+                <div class="smallPhoto">
+                  <!-- <img src="#" alt="紹介画像（小）"> -->
+                </div>
+                <div class="smallPhoto">
+                  <!-- <img src="#" alt="紹介画像（小）"> -->
+                </div>
+                <div class="smallPhoto">
+                  <!-- <img src="#" alt="紹介画像（小）"> -->
+                </div>
+                <div class="smallPhoto">
+                  <!-- <img src="#" alt="紹介画像（小）"> -->
+                </div>
+              </div>
+            </div>
+
+              <!-- 紹介文 -->
+             <div class="description">
+               <p>PWのタイプと、PW数を指定してPWを作成することができるマクロです。<br>
+              作成できるPWのタイプは数字のみ、アルファベット小文字数字、アルファベット小文字数字記号、アルファベット小文字大文字数字記号から選択できます。PW数はPWのタイプによって4、8、10、16、32から選択できます。<br>
+              PWのタイプと文字数を指定したら「作成」ボタンを押せばPWが作成されます。<br>
+              </p>
+             </div>
+          </div>
+
+              <!-- WebSite/DL -->
+              <div class="works_title">
+                <h2>WebSite/DL</h2>
+                <div class="works">
+                  <a href="#" id="newDL"><p>最新版ダウンロード（Ver01）</p></a>
+                  <a href="vba1_policy.html"><p>利用規約</p></a>
+                  <a href="vba1_manual.html"><p>説明書</p></a>
+                </div>
+              </div>
+
+        </main>
+      </div>
+    </div>
+  </div>
+  <script>
+    "use strict";
+
+    // 要素と変数の宣言
+    const newDL = document.getElementById('newDL');
+    let downloaded = 'no';
+
+    // 確認メッセージで「OK」が押されたらダウンロード、一度ダウンロードが終わったら確認メッセージは出さない
+    const isDL = function(){
+      if(downloaded=='no'){
+        if(confirm('利用規約を確認して下さい。そのうえで、同意しますか？')==true){
+          alert('Excelブックを既定の場所にダウンロードします。');
+          newDL.setAttribute('href','PW作成.zip');
+          downloaded = 'yes';
+        }else{
+          alert('利用規則に同意できない場合はダウンロードできません。');
+        }
+      }
+    }
+
+    // 最新版ダウンロードリンククリックでisDL関数
+    newDL.addEventListener('click',isDL,false);
+  </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@500&family=Permanent+Marker&display=swap');
+
+/* html{
+  height: 600px;
+  width: 800px;
+} */
+
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #000000e0;
+  max-width: 1900px;
+}
+
+header{
+  margin-bottom:90px;
+}
+
+header>p{
+  background-color: #1e1e80;
+  color: #ffffff;
+  margin: 0;
+  padding: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.release{
+  margin-bottom: 0;
+}
+
+strong{
+  font-size: 70px;
+  color: #ffffff;
+  font-family: 'Kaisei Opti', serif;
+}
+
+.message{
+  font-size: 20px;
+  color: #ffffff9a;
+  margin: 0 0 40px;
+  font-family: 'Kaisei Opti', serif;
+}
+
+button{
+  font-size: 130%;
+  background-color: #2a2aeb;
+  color: white;
+  padding: 6px;
+  font-family: 'Permanent Marker', cursive;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+button:hover{
+  opacity: .4;
+}
+
+.date{
+  padding: 30px 0;
+  margin: 40px 0 0;
+  background-color: #1e1e80;
+  color: #ffffff;
+}
+
+footer{
+  font-weight: bold;
+  color: #ffffff9a;
+  margin: 0 0 40px;
+  text-align: right;
+}
+

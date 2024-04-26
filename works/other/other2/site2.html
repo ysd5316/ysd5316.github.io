@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="favicon.ico" href="https://mpws.under.jp/images/favicon.ico">
+  <title>アンケートサイト</title>
+
+  <!-- ブートストラップ -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container-sm">
+    <header>
+      <div class="row">
+        <div class="col-sm-6">
+          <h1>本書アンケート</h1>
+        </div>
+        <div class="col-sm-6 text-right" id="a">
+          <a href="../../../index.html">前に戻る</a>
+        </div>
+        <p class="col-sm-8">本書について教えてください。</p>
+      </div>
+    </header>
+    
+    <hr>
+
+    <form action="" method="post" class="row">
+      <div class="col-sm-8 offset-sm-2">
+        <p>
+          この度は本書をご購入いただきありがとうございます。<br>
+          よろしければアンケートにご回答ください。<br>
+          今後の参考にさせていただきます。<br>
+        </p>
+  
+        <div class="form-group">
+          <label for="name">お名前</label>
+          <input type="text" id="name" name="name" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="age">ご年齢</label>
+          <select id="age" name="age" class="form-control">
+            <option value="0">未回答</option>
+            <option value="1">10代</option>
+            <option value="2">20代</option>
+            <option value="3">30代</option>
+            <option value="4">その他</option>
+          </select>
+        </div>
+        <div class="form-group row">
+          <label for="no" class="col-sm-6 col-form-label">図書アンケート番号<span class="badge-danger">必須</span></label>
+          <div class="col-sm-6">
+            <input type="text" id="no" name="no" class="form-control" placeholder="123-222-456" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="d-block">本書についてどう思いましたか？</label>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="Ans" id="Ans_1" value="1">
+              <label for="Ans_1" class="form-check-label">良かった</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="Ans" id="Ans_2" value="2">
+              <label for="Ans_2" class="form-check-label">良くなかった</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="Ans" id="Ans_3" value="3">
+              <label for="Ans_3" class="form-check-label">どちらでもない</label>
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="opinion">ご意見</label>
+          <textarea name="opinion" id="opinion" rows="5" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">アンケート送信</button>
+        </div>
+      </div>
+    </form>
+
+    <hr>
+  </div>
+  <script>
+    'use strict'
+
+    const Anser = ()=>alert("ご回答ありがとうございました。")
+
+    {
+      document.querySelector('form').addEventListener('submit',e=>{
+        e.preventDefault();
+        Anser();
+      });
+    }
+  </script>
+</body>
+
+<div class="container-sm">
+  <footer class="form-group">
+      <div class="text-right">
+        <p>&copy;読書普及委員会</p>
+      </div>
+  </footer>
+</div>
+</html>

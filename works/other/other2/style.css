@@ -1,0 +1,38 @@
+header{
+  margin-top: 20px;
+}
+
+body{
+  font-size: 16px;
+  background-color: #e4eed6;
+}
+
+h1{
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+  margin-bottom: 20px;
+}
+
+#a{
+  color: green;
+  font-weight: bold;
+}
+
+hr{
+  border-width: 3px;
+  border-color: green;
+  margin: 20px 0;
+  border-style: dashed;
+}
+
+span{
+  font-size: 10px;
+  font-weight:bold;
+  border-radius: 10%;
+  vertical-align: super;
+}
+
+.form-group>label{
+  font-weight: bold;
+}

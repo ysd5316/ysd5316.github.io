@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="favicon.ico" href="https://mpws.under.jp/images/favicon.ico">
+  <title>人気図書検索</title>
+
+  <!-- ブートストラップ -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="seach">
+      <h1>人気図書検索</h1>
+      <p id="back_link"><a href="../../../index.html">前に戻る</a></p>
+      
+      <!-- 「銃」で検索することで本当に対象の図書がない場合の表示が出ます。 -->
+      <p>楽天APIで図書の売上TOP3を表示します。以下のフォームにキーワードを入力して下さい。</p>
+      <p id="attention">※一度の検索だと対象の図書があっても表示されない場合が多いです。画像が表示されない場合、もう一度検索してみて下さい。</p>
+      
+      <form action="#" method="#">
+        <div class="col align-item-start">
+          <label for="keyword">検索キーワード</label>
+        </div>
+        <div class="col align-items-cnter">
+          <input type="text" id="keyword" placeholder="入力例）夢分析">
+        </div>
+        <div class="col align-items-end" id="button">
+          <button id="keyword" class="btn btn-lg btn-primary">検索</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- 楽天APIのクレジット表記 -->
+    <div id="credit">
+      <!-- Rakuten Web Services Attribution Snippet FROM HERE -->
+      <a href="https://webservice.rakuten.co.jp/" target="_blank"><img src="https://webservice.rakuten.co.jp/img/credit/200709/credit_22121.gif" border="0" alt="Rakuten Web Service Center" title="Rakuten Web Service Center" width="221" height="21"/></a>
+      <!-- Rakuten Web Services Attribution Snippet TO HERE -->
+    </div>
+    
+    <!-- 取得したデータを表示 -->
+    <div class="photo">
+      <div class="itemIMG">
+        <img src="img/211009_lesson7_デフォルト.png" id="img0">
+        <div class="innerText0" id="isbn0"><p>ISBN</p></div>
+        <div class="innerText1"><p>１位</p></div>
+      </div>
+      <div class="itemIMG">
+        <img src="img/211009_lesson7_デフォルト.png" id="img1">
+        <div class="innerText0" id="isbn1"><p>ISBN</p></div>
+        <div class="innerText1"><p>２位</p></div>
+      </div>
+      <div class="itemIMG">
+        <img src="img/211009_lesson7_デフォルト.png" id="img2">
+        <div class="innerText0" id="isbn2"><p>ISBN</p></div>
+        <div class="innerText1"><p>３位</p></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
